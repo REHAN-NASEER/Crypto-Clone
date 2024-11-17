@@ -1,0 +1,49 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 10%;
+    border-bottom: 2px solid #3c3c3c;
+    color: #ddd;
+}
+.nav .logo{
+    width:max(12vh,120px) 
+}
+.nav ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    cursor: pointer;
+}
+.nav-right{
+    display: flex;
+    gap: max(1vh,12px);
+    align-items: center;
+}
+.nav-right select{
+    padding: 5px 8px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 6px;
+
+}
+.nav-right option{
+    background-color: #09005c;
+    color: white;
+}
+.nav-right button{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #393939;
+    background-color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+ .nav-right button img{
+    width: 13px;
+ }
