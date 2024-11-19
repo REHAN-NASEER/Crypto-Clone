@@ -1,0 +1,112 @@
+.home{
+    padding: 0 10px;
+    padding-bottom:100px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    gap: 40px;
+    margin: 80px auto;
+}
+.hero h1{
+    font-size: max(4vw,36px);
+}
+.hero p{
+    width: 70%;
+    line-height: 1.5;
+    color: #e3e3e3;
+}
+.hero form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    font-size: 20px;
+    gap: 10px;
+    border-radius: 5px;
+    width: 80%;
+    background: white;
+}
+.hero input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.hero button{
+    border: none;
+    background: #6000fa;
+    border-radius: 5px;
+    padding:10px 30px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+.hero button:hover{
+    background:#340088;;
+}
+.crypto-table{
+    margin: auto;
+    max-width: 800px;
+    border-radius: 15px;
+    background: linear-gradient(rgba(83, 3, 255, 0.15),rgba(105,2,153,0.15));
+}
+.crypto-layout{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+    align-items: center;
+    border-bottom: 1px solid #3c3c3c;
+    padding:15px 20px;
+}
+.market-cap{
+    text-align: right;
+}
+.crypto-layout:last-child{
+    border: none;
+}
+
+.crypto-layout div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.crypto-layout div img{
+    width: 35px;
+}
+
+.green{
+    color: #00d515;
+    align-items: center;
+}
+.red{
+    color: #ff4646;
+    align-items: center;
+}
+
+@media (max-width:768px) {
+    .hero form input{
+       width: 100px;
+    }
+    .crypto-layout{
+        grid-template-columns: 0.5fr 3fr 1fr 1fr ;
+    }
+    .market-cap{
+        display: none;
+    }
+}
+
+@media (max-width:500px){
+    .crypto-layout div img{
+
+        width: 25px;
+    }
+    .crypto-layout{
+        font-size: 13px;
+    }
+}

@@ -7,7 +7,9 @@
     color: #ddd;
 }
 .nav .logo{
+    cursor: pointer;
     width:max(12vh,120px) 
+    
 }
 .nav ul{
     display: flex;
@@ -26,7 +28,7 @@
     border: 2px solid white;
     background: transparent;
     border-radius: 6px;
-
+    cursor: pointer;
 }
 .nav-right option{
     background-color: #09005c;
@@ -46,4 +48,26 @@
 }
  .nav-right button img{
     width: 13px;
+ }
+
+ @media (max-width:900px) {
+    .nav{
+        padding:20px 8%;
+    }
+    .nav button{
+        gap:5px;
+        padding: 8px 15px;
+    }
+ }
+ @media (max-width:768px) {
+    .nav{
+        padding:20px 8%;
+    }
+    .nav ul{
+        display: none;
+    }
+    .nav button{
+        padding: 5px 10px;
+    }
+
  }

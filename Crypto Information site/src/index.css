@@ -16,3 +16,13 @@ a{
   color: white;
   background: linear-gradient(#0b004e,#1d152f,#002834);
 }
+
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+
+body {
+  overflow: auto; /* To allow scrolling while hiding the scrollbar */
+  scrollbar-width: none; /* For Firefox */
+}
