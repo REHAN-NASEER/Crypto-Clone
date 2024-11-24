@@ -56,7 +56,7 @@ function Home() {
           <p style={{ textAlign: "center" }}>24H Change</p>
           <p className="market-cap">Market Cap</p>
         </div>
-        {displaycoins.length === 0 ? (
+        {Array.isArray(displaycoins) && displaycoins.length === 0 ? (
           <p>No coins available</p> // Display message if no coins
         ) : (
           displaycoins.slice(0, 15).map((item, index) => (

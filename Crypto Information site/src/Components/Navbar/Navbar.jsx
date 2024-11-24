@@ -18,7 +18,7 @@ function Navbar() {
       pkr: { name: "pkr", symbol: "₨" }, 
     };
 
-    setCurrency(currencyData[value] || Currencydata["usd"]);
+    setCurrency(currencyData[value] || currencyData["usd"]);
   };
 
   return (
