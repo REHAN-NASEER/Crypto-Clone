@@ -3,7 +3,7 @@ import React, { createContext, useEffect, useState } from "react";
 export const CoinContext = createContext();
 
 const API_KEY=import.meta.env.VITE_API_KEY
-console.log(API_KEY);
+
 
 const CoinContextProvider = (props) => {
   const [coins, setCoins] = useState([]);
